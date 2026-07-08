@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:4338ca,100:06b6d4&height=220&section=header&text=zyaoii_&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=To%20seek,%20to%20build,%20to%20become.&descAlignY=58&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:4338ca,100:06b6d4&height=230&section=header&text=zyaoii_&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=To%20seek,%20to%20build,%20to%20become.&descAlignY=57&descSize=18" />
+
+<img src="https://komarev.com/ghpvc/?username=zymk8353&label=visitors&color=06b6d4&style=flat-square" />
 
 ### 写一点代码，也写一点通往远方的路。
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Stay+hungry%2C+stay+foolish.;Learning+is+a+long+conversation+with+the+unknown.;Build+small+things%2C+chase+larger+questions.;The+journey+matters+too." />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=820&lines=Stay+hungry%2C+stay+foolish.;The+stars+are+far%2C+but+the+terminal+is+near.;Build+small+things%2C+chase+larger+questions.;The+journey+matters+too." />
 
 </div>
 
@@ -50,16 +52,22 @@ Motto: Stay hungry, stay foolish.
 
 </div>
 
-### Tiny Manifesto
+### Coordinate
 
 ```js
 const zyaoii = {
-  learning: ["frontend", "backend", "AI", "automation"],
-  building: "small useful things",
-  belief: "every working thing begins as a rough draft",
-  motto: "ship first, polish later"
+  path: "between code and questions",
+  compass: ["curiosity", "patience", "clarity"],
+  craft: "turning small sparks into working tools",
+  horizon: "to seek, to build, to become"
 }
 ```
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+
+</div>
 
 ---
 
