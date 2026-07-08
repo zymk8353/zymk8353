@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:7c3aed,100:06b6d4&height=220&section=header&text=Hi,%20I'm%20zymk8353&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Code.%20Build.%20Break.%20Learn.&descAlignY=58&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:4338ca,100:06b6d4&height=220&section=header&text=zyaoii_&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=To%20seek,%20to%20build,%20to%20become.&descAlignY=58&descSize=18" />
 
-### A curious developer exploring code, AI, automation, and useful little tools.
+### 写一点代码，也写一点通往远方的路。
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&width=650&lines=Learning+by+building;Turning+ideas+into+small+tools;Exploring+AI+and+automation;Always+debugging+something" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Stay+hungry%2C+stay+foolish.;Learning+is+a+long+conversation+with+the+unknown.;Build+small+things%2C+chase+larger+questions.;The+journey+matters+too." />
 
 </div>
 
@@ -15,12 +15,16 @@
 ```txt
 > whoami
 
-Name: zymk8353
-Role: Developer in progress
+Name: zyaoii_
+Role: A learner walking toward software craft
 Focus: Web development / AI tools / automation
-Status: Learning, building, shipping small things
-Mood: make it work, then make it clean
+State: Building small things, collecting quiet progress
+Motto: Stay hungry, stay foolish.
 ```
+
+### A Line I Like
+
+> 路漫漫其修远兮，吾将上下而求索。
 
 ### Tech Playground
 
@@ -30,10 +34,10 @@ Mood: make it work, then make it clean
 
 ### Current Quest
 
-- Build small projects to sharpen my skills
-- Learn better frontend and backend patterns
-- Explore AI agents and automation workflows
-- Write code that works before pretending it is elegant
+- Turn curiosity into working software
+- Learn frontend, backend, AI, and automation by building
+- Keep shipping small things instead of waiting for perfect ideas
+- Make it work, then make it clear
 
 ### GitHub Signals
 
@@ -49,10 +53,10 @@ Mood: make it work, then make it clean
 ### Tiny Manifesto
 
 ```js
-const me = {
+const zyaoii = {
   learning: ["frontend", "backend", "AI", "automation"],
   building: "small useful things",
-  goal: "turn curiosity into working software",
+  belief: "every working thing begins as a rough draft",
   motto: "ship first, polish later"
 }
 ```
@@ -61,6 +65,6 @@ const me = {
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:7c3aed,100:0f172a&height=120&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:4338ca,100:020617&height=120&section=footer" />
 
 </div>
