@@ -62,6 +62,10 @@ PLAYER EXPERIENCE
 
 <div align="center">
 
+<img src="./assets/token-usage.svg" alt="AI token usage telemetry" />
+
+<br/><br/>
+
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=zymk8353&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=030712&title_color=22d3ee&icon_color=a855f7&text_color=cbd5e1" />
 <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=zymk8353&theme=midnight-purple&hide_border=true&background=030712&ring=22D3EE&fire=A855F7&currStreakLabel=22D3EE" />
 
