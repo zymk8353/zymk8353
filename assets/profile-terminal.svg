@@ -1,0 +1,58 @@
+<svg width="1000" height="340" viewBox="0 0 1000 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; }
+    .scan { animation: scan 5s linear infinite; }
+    .blink { animation: blink 1s steps(1) infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
+    .flow { stroke-dasharray: 7 13; animation: flow 2s linear infinite; }
+    .fade1 { animation: fade 4s ease-in-out infinite; }
+    .fade2 { animation: fade 4s 1.3s ease-in-out infinite; }
+    .fade3 { animation: fade 4s 2.6s ease-in-out infinite; }
+    @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(380px); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes pulse { 50% { opacity: .35; transform: scale(.82); } }
+    @keyframes flow { to { stroke-dashoffset: -40; } }
+    @keyframes fade { 0%, 100% { opacity: .28; } 45% { opacity: 1; } }
+  </style>
+
+  <rect width="1000" height="340" rx="12" fill="#080B12"/>
+  <rect x="1" y="1" width="998" height="338" rx="11" stroke="#242B3A" stroke-width="2"/>
+  <path d="M0 44H1000" stroke="#242B3A"/>
+  <circle cx="24" cy="22" r="5" fill="#FF4D8D"/>
+  <circle cx="43" cy="22" r="5" fill="#F6C453"/>
+  <circle cx="62" cy="22" r="5" fill="#39FFB6"/>
+  <text x="500" y="27" text-anchor="middle" class="mono" font-size="12" fill="#667085">zyaoii@quality-lab: ~/signal</text>
+
+  <g opacity=".13" stroke="#7C5CFC">
+    <path d="M0 84H1000M0 124H1000M0 164H1000M0 204H1000M0 244H1000M0 284H1000M100 44V340M200 44V340M300 44V340M400 44V340M500 44V340M600 44V340M700 44V340M800 44V340M900 44V340"/>
+  </g>
+  <rect class="scan" x="0" y="44" width="1000" height="50" fill="#39FFB6" opacity=".035"/>
+
+  <text x="55" y="98" class="mono" font-size="13" fill="#39FFB6">$ ./identify --operator</text>
+  <text x="55" y="165" class="mono" font-size="52" font-weight="700" fill="#F4F7FB">zyaoii_</text>
+  <rect class="blink" x="282" y="126" width="5" height="43" fill="#39FFB6"/>
+  <text x="58" y="201" class="mono" font-size="17" fill="#AAB4C3">AI ENGINEERING</text>
+  <text x="218" y="201" class="mono" font-size="17" fill="#667085">×</text>
+  <text x="242" y="201" class="mono" font-size="17" fill="#FF4D8D">GAME QUALITY ASSURANCE</text>
+  <text x="58" y="246" class="mono fade1" font-size="13" fill="#C8D1E0">OBSERVE</text>
+  <path class="flow" d="M126 241H175" stroke="#39FFB6" stroke-width="2"/>
+  <text x="188" y="246" class="mono fade2" font-size="13" fill="#C8D1E0">VERIFY</text>
+  <path class="flow" d="M246 241H295" stroke="#7C5CFC" stroke-width="2"/>
+  <text x="308" y="246" class="mono fade3" font-size="13" fill="#C8D1E0">IMPROVE</text>
+  <text x="58" y="298" class="mono" font-size="12" fill="#667085">STATUS</text>
+  <circle class="pulse" cx="118" cy="294" r="5" fill="#39FFB6"/>
+  <text x="132" y="298" class="mono" font-size="12" fill="#39FFB6">BUILDING SIGNAL IN THE NOISE</text>
+
+  <g transform="translate(685 92)">
+    <circle cx="105" cy="88" r="82" stroke="#242B3A" stroke-width="2"/>
+    <circle cx="105" cy="88" r="58" stroke="#7C5CFC" stroke-opacity=".48"/>
+    <circle cx="105" cy="88" r="34" stroke="#39FFB6" stroke-opacity=".6"/>
+    <path class="flow" d="M105 6A82 82 0 0 1 187 88" stroke="#39FFB6" stroke-width="3"/>
+    <path class="flow" d="M47 146A82 82 0 0 1 23 88" stroke="#FF4D8D" stroke-width="3"/>
+    <circle class="pulse" cx="105" cy="88" r="11" fill="#39FFB6" opacity=".8"/>
+    <circle cx="105" cy="6" r="4" fill="#FF4D8D"/>
+    <circle cx="187" cy="88" r="4" fill="#F6C453"/>
+    <circle cx="47" cy="146" r="4" fill="#7C5CFC"/>
+    <text x="105" y="206" text-anchor="middle" class="mono" font-size="11" fill="#667085">RISK RADAR // ONLINE</text>
+  </g>
+</svg>
