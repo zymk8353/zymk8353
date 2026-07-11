@@ -14,17 +14,6 @@
 
 </div>
 
-## `01 // SYSTEM PROFILE`
-
-```yaml
-operator: zyaoii_
-coordinates: AI Engineering x Game Quality Assurance
-objective: turn uncertainty into evidence
-loop: observe -> model -> test -> diagnose -> improve
-```
-
-> 好的质量从不喧哗，它只是让玩家忘记 Bug 的存在。
-
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -60,20 +49,6 @@ change     risk      confidence
 </tr>
 </table>
 
-## `02 // TOOLCHAIN`
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,js,ts,nodejs,git,github,docker,linux,vscode&theme=dark&perline=9" alt="Toolchain" />
-
-<br/><br/>
-
-`AI TESTING` &nbsp; `AUTOMATION` &nbsp; `GAME QA` &nbsp; `PERFORMANCE` &nbsp; `QUALITY ENGINEERING`
-
-</div>
-
-## `03 // LIVE TELEMETRY`
-
 <div align="center">
 
 <img width="100%" src="./assets/token-usage.svg" alt="AI token usage telemetry" />
@@ -87,8 +62,6 @@ change     risk      confidence
 
 </div>
 
-## `04 // CURRENT LOOP`
-
 ```python
 while curious:
     learn("AI")
@@ -96,11 +69,3 @@ while curious:
     test("games")
     improve("player experience")
 ```
-
-<div align="center">
-
-### 路虽远，行则将至；事虽难，做则必成。
-
-<sub>BUILDING SIGNAL IN THE NOISE · zyaoii_</sub>
-
-</div>

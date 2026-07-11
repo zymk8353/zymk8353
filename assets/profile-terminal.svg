@@ -39,9 +39,8 @@
   <text x="188" y="246" class="mono fade2" font-size="13" fill="#C8D1E0">VERIFY</text>
   <path class="flow" d="M246 241H295" stroke="#7C5CFC" stroke-width="2"/>
   <text x="308" y="246" class="mono fade3" font-size="13" fill="#C8D1E0">IMPROVE</text>
-  <text x="58" y="298" class="mono" font-size="12" fill="#667085">STATUS</text>
-  <circle class="pulse" cx="118" cy="294" r="5" fill="#39FFB6"/>
-  <text x="132" y="298" class="mono" font-size="12" fill="#39FFB6">BUILDING SIGNAL IN THE NOISE</text>
+  <circle class="pulse" cx="62" cy="294" r="5" fill="#39FFB6"/>
+  <text x="78" y="300" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="17" font-weight="600" fill="#39FFB6">路虽远，行则将至；事虽难，做则必成。</text>
 
   <g transform="translate(685 92)">
     <circle cx="105" cy="88" r="82" stroke="#242B3A" stroke-width="2"/>
