@@ -1,1 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="210" viewBox="0 0 520 210"><style>.title{font:700 20px 'Segoe UI',sans-serif;fill:#f8fafc}.total{font:700 32px Consolas,monospace;fill:#22d3ee}.label{font:14px Consolas,monospace;fill:#94a3b8}.value{font:700 14px Consolas,monospace;fill:#e2e8f0}</style><rect width="520" height="210" rx="8" fill="#05070d"/><rect x="1" y="1" width="518" height="208" rx="7" fill="none" stroke="#263245"/><path d="M0 4H360L520 164V210H0Z" fill="#07141b" opacity=".7"/><circle cx="480" cy="38" r="5" fill="#22d3ee"/><text x="38" y="43" class="title">AI TOKEN TELEMETRY</text><text x="38" y="80" class="total">248.5M</text><text x="38" y="112" class="label">Codex</text><text x="482" y="112" text-anchor="end" class="value">238.4M</text><text x="38" y="140" class="label">ZCode</text><text x="482" y="140" text-anchor="end" class="value">10.1M</text><text x="482" y="190" text-anchor="end" class="label">LOCAL SNAPSHOT · NO PROMPT DATA</text></svg>
+<svg width="1000" height="230" viewBox="0 0 1000 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="tcard"><rect width="1000" height="230" rx="14"/></clipPath>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E7A5C"/><stop offset="1" stop-color="#39FFB6"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6B2447"/><stop offset="1" stop-color="#FF4D8D"/>
+    </linearGradient>
+    <filter id="tglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono','SFMono-Regular',Consolas,monospace; }
+    .grow1 { animation: grow 1.6s .3s cubic-bezier(.2,.8,.2,1) both; transform-origin: 240px 0; }
+    .grow2 { animation: grow 1.6s .7s cubic-bezier(.2,.8,.2,1) both; transform-origin: 240px 0; }
+    .shine { animation: shine 3.2s 1.2s linear infinite; }
+    .beat { animation: beat 1.6s ease-in-out infinite; transform-origin: center; }
+    .tscan { animation: tscan 4.5s linear infinite; }
+    .appear1 { animation: appear .6s .9s both; }
+    .appear2 { animation: appear .6s 1.3s both; }
+    .wavefl { stroke-dasharray: 4 6; animation: wave 2.2s linear infinite; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes shine { 0% { transform: translateX(-80px); opacity: 0; } 15% { opacity: .5; } 40%,100% { transform: translateX(780px); opacity: 0; } }
+    @keyframes beat { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(.75); } }
+    @keyframes tscan { from { transform: translateY(-40px); } to { transform: translateY(260px); } }
+    @keyframes appear { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes wave { to { stroke-dashoffset: -30; } }
+  </style>
+
+  <g clip-path="url(#tcard)">
+    <rect width="1000" height="230" fill="#05070D"/>
+    <path d="M0 6H700L1000 180V230H0Z" fill="#07141B" opacity=".65"/>
+    <g opacity=".08" stroke="#7C5CFC">
+      <path d="M240 0V230M430 0V230M620 0V230M810 0V230"/>
+    </g>
+    <rect class="tscan" width="1000" height="36" fill="#39FFB6" opacity=".035"/>
+
+    <circle class="beat" cx="950" cy="38" r="6" fill="#22D3EE" filter="url(#tglow)"/>
+    <text x="38" y="44" class="mono" font-size="19" font-weight="700" fill="#F8FAFC">AI TOKEN TELEMETRY</text>
+    <text x="38" y="92" class="mono" font-size="36" font-weight="700" fill="#22D3EE" filter="url(#tglow)">248.5M</text>
+    <text x="180" y="92" class="mono" font-size="13" fill="#667085">TOTAL TOKENS PROCESSED</text>
+    <path class="wavefl" d="M38 108 H962" stroke="#242B3A" stroke-width="1.5"/>
+
+    <!-- Codex bar -->
+    <text x="38" y="143" class="mono" font-size="14" fill="#94A3B8">Codex</text>
+    <rect x="240" y="128" width="640" height="18" rx="9" fill="#0D1420"/>
+    <g class="grow1">
+      <rect x="240" y="128" width="614" height="18" rx="9" fill="url(#bar1)"/>
+    </g>
+    <rect class="shine" x="240" y="128" width="60" height="18" rx="9" fill="#FFFFFF" opacity=".35"/>
+    <text x="962" y="143" text-anchor="end" class="mono appear1" font-size="14" font-weight="700" fill="#39FFB6">238.4M</text>
+
+    <!-- ZCode bar -->
+    <text x="38" y="181" class="mono" font-size="14" fill="#94A3B8">ZCode</text>
+    <rect x="240" y="166" width="640" height="18" rx="9" fill="#0D1420"/>
+    <g class="grow2">
+      <rect x="240" y="166" width="64" height="18" rx="9" fill="url(#bar2)"/>
+    </g>
+    <text x="962" y="181" text-anchor="end" class="mono appear2" font-size="14" font-weight="700" fill="#FF4D8D">10.1M</text>
+
+    <text x="962" y="216" text-anchor="end" class="mono" font-size="11" fill="#667085">LOCAL SNAPSHOT · NO PROMPT DATA</text>
+    <text x="38" y="216" class="mono" font-size="11" fill="#39FFB6">$ telemetry --live<tspan class="beat">_</tspan></text>
+  </g>
+
+  <rect x="1" y="1" width="998" height="228" rx="13" stroke="#263245" stroke-width="2"/>
+</svg>

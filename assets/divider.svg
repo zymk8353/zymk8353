@@ -1,0 +1,19 @@
+<svg width="1000" height="56" viewBox="0 0 1000 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="dglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .ecg { stroke-dasharray: 1120; stroke-dashoffset: 1120; animation: draw 3.4s linear infinite; }
+    .dot { animation: blip 3.4s ease-out infinite; transform-origin: 500px 28px; }
+    @keyframes draw { 0% { stroke-dashoffset: 1120; } 62% { stroke-dashoffset: 0; } 78% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+    @keyframes blip { 0%,38% { opacity: 0; transform: scale(.4); } 46% { opacity: 1; transform: scale(1.6); } 60%,100% { opacity: 0; transform: scale(2.4); } }
+  </style>
+  <path d="M0 28 H1000" stroke="#242B3A" stroke-width="1"/>
+  <path class="ecg" filter="url(#dglow)"
+    d="M0 28 H360 L392 28 402 12 414 44 426 6 438 46 450 20 462 28 H540 L552 28 562 16 574 42 586 10 598 44 610 24 622 28 H1000"
+    stroke="#39FFB6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle class="dot" cx="500" cy="28" r="4" fill="#FF4D8D" filter="url(#dglow)"/>
+</svg>
