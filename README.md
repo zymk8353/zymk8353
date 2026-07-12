@@ -11,6 +11,8 @@
   <img src="https://komarev.com/ghpvc/?username=zymk8353&label=SIGNAL&color=7C5CFC&style=for-the-badge" />
 </p>
 
+<img width="420" src="./assets/operator-card.svg" alt="SSR operator card — zyaoii_" />
+
 </div>
 
 <table>
