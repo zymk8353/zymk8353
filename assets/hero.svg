@@ -6,6 +6,10 @@
       <stop offset=".5" stop-color="#7C5CFC"/>
       <stop offset="1" stop-color="#FF4D8D"/>
     </linearGradient>
+    <linearGradient id="hexg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39FFB6"/>
+      <stop offset="1" stop-color="#7C5CFC"/>
+    </linearGradient>
     <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#39FFB6" stop-opacity=".55"/>
       <stop offset="1" stop-color="#39FFB6" stop-opacity="0"/>
@@ -13,6 +17,10 @@
     <radialGradient id="halo" cx=".5" cy=".5" r=".5">
       <stop offset="0" stop-color="#7C5CFC" stop-opacity=".22"/>
       <stop offset="1" stop-color="#7C5CFC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#39FFB6" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#39FFB6" stop-opacity="0"/>
     </radialGradient>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="3.2" result="b"/>
@@ -34,11 +42,16 @@
     .rain2 { animation: rain 9s 1.6s linear infinite; }
     .rain3 { animation: rain 6s 3.1s linear infinite; }
     .rain4 { animation: rain 8s .8s linear infinite; }
-    .rain5 { animation: rain 10s 2.2s linear infinite; }
     .g-main { animation: jitter 3.4s steps(1) infinite; }
     .g-pink { animation: gpink 3.4s steps(1) infinite; opacity: 0; }
     .g-cyan { animation: gcyan 3.4s steps(1) infinite; opacity: 0; }
+    .z-main { animation: jitter 2.7s steps(1) infinite; }
+    .z-pink { animation: gpink 2.7s .2s steps(1) infinite; opacity: 0; }
+    .z-cyan { animation: gcyan 2.7s .2s steps(1) infinite; opacity: 0; }
     .rotor { animation: rotor 4.5s linear infinite; transform-origin: 0 0; }
+    .orbit { animation: rotor 10s linear infinite; transform-origin: 0 0; }
+    .orbit-r { animation: rotorrev 16s linear infinite; transform-origin: 0 0; }
+    .hexbreathe { animation: breathe 3.6s ease-in-out infinite; transform-origin: 0 0; }
     .ping1 { animation: ping 3s ease-out infinite; transform-origin: 46px -30px; }
     .ping2 { animation: ping 3s 1s ease-out infinite; transform-origin: -52px 24px; }
     .ping3 { animation: ping 3s 2s ease-out infinite; transform-origin: 18px 58px; }
@@ -54,6 +67,8 @@
     @keyframes gpink { 0%,86%,96%,100% { opacity: 0; } 88% { opacity: .85; transform: translate(-4px,2px); } 92% { opacity: .7; transform: translate(3px,-2px); } }
     @keyframes gcyan { 0%,87%,95%,100% { opacity: 0; } 89% { opacity: .8; transform: translate(4px,-2px); } 93% { opacity: .65; transform: translate(-3px,2px); } }
     @keyframes rotor { to { transform: rotate(360deg); } }
+    @keyframes rotorrev { to { transform: rotate(-360deg); } }
+    @keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
     @keyframes ping { 0% { opacity: .9; transform: scale(.4); } 70%,100% { opacity: 0; transform: scale(2.6); } }
     @keyframes pulse { 50% { opacity: .35; transform: scale(.8); } }
     @keyframes flick { 0%,70%,100% { opacity: 1; } 72%,76% { opacity: .2; } 74% { opacity: .9; } }
@@ -61,15 +76,15 @@
 
   <g clip-path="url(#card)">
     <rect width="1000" height="380" fill="#05070D"/>
-    <circle cx="800" cy="200" r="220" fill="url(#halo)"/>
+    <circle cx="820" cy="200" r="210" fill="url(#halo)"/>
+    <circle cx="150" cy="195" r="180" fill="url(#halo2)"/>
 
     <!-- matrix rain -->
     <g class="mono" font-size="13" fill="#39FFB6" opacity=".10">
-      <text class="rain"  x="120" y="0">1<tspan x="120" dy="18">0</tspan><tspan x="120" dy="18">x</tspan><tspan x="120" dy="18">4</tspan><tspan x="120" dy="18">F</tspan><tspan x="120" dy="18">1</tspan><tspan x="120" dy="18">0</tspan><tspan x="120" dy="18">e</tspan></text>
-      <text class="rain2" x="342" y="0">0<tspan x="342" dy="18">7</tspan><tspan x="342" dy="18">A</tspan><tspan x="342" dy="18">1</tspan><tspan x="342" dy="18">0</tspan><tspan x="342" dy="18">c</tspan><tspan x="342" dy="18">9</tspan><tspan x="342" dy="18">1</tspan></text>
-      <text class="rain3" x="518" y="0">F<tspan x="518" dy="18">0</tspan><tspan x="518" dy="18">1</tspan><tspan x="518" dy="18">b</tspan><tspan x="518" dy="18">0</tspan><tspan x="518" dy="18">3</tspan><tspan x="518" dy="18">1</tspan><tspan x="518" dy="18">D</tspan></text>
-      <text class="rain4" x="655" y="0">1<tspan x="655" dy="18">E</tspan><tspan x="655" dy="18">0</tspan><tspan x="655" dy="18">8</tspan><tspan x="655" dy="18">1</tspan><tspan x="655" dy="18">a</tspan><tspan x="655" dy="18">0</tspan><tspan x="655" dy="18">5</tspan></text>
-      <text class="rain5" x="938" y="0">0<tspan x="938" dy="18">C</tspan><tspan x="938" dy="18">1</tspan><tspan x="938" dy="18">2</tspan><tspan x="938" dy="18">0</tspan><tspan x="938" dy="18">d</tspan><tspan x="938" dy="18">1</tspan><tspan x="938" dy="18">6</tspan></text>
+      <text class="rain"  x="335" y="0">1<tspan x="335" dy="18">0</tspan><tspan x="335" dy="18">x</tspan><tspan x="335" dy="18">4</tspan><tspan x="335" dy="18">F</tspan><tspan x="335" dy="18">1</tspan><tspan x="335" dy="18">0</tspan><tspan x="335" dy="18">e</tspan></text>
+      <text class="rain2" x="508" y="0">0<tspan x="508" dy="18">7</tspan><tspan x="508" dy="18">A</tspan><tspan x="508" dy="18">1</tspan><tspan x="508" dy="18">0</tspan><tspan x="508" dy="18">c</tspan><tspan x="508" dy="18">9</tspan><tspan x="508" dy="18">1</tspan></text>
+      <text class="rain3" x="648" y="0">F<tspan x="648" dy="18">0</tspan><tspan x="648" dy="18">1</tspan><tspan x="648" dy="18">b</tspan><tspan x="648" dy="18">0</tspan><tspan x="648" dy="18">3</tspan><tspan x="648" dy="18">1</tspan><tspan x="648" dy="18">D</tspan></text>
+      <text class="rain4" x="948" y="0">1<tspan x="948" dy="18">E</tspan><tspan x="948" dy="18">0</tspan><tspan x="948" dy="18">8</tspan><tspan x="948" dy="18">1</tspan><tspan x="948" dy="18">a</tspan><tspan x="948" dy="18">0</tspan><tspan x="948" dy="18">5</tspan></text>
     </g>
 
     <!-- grid -->
@@ -86,47 +101,65 @@
     <text x="500" y="29" text-anchor="middle" class="mono" font-size="12" fill="#667085">zyaoii@quality-lab: ~/signal — booted</text>
     <text x="962" y="29" text-anchor="end" class="mono flick" font-size="11" fill="#39FFB6">● LIVE</text>
 
-    <!-- left: identity -->
-    <text x="55" y="102" class="mono" font-size="13" fill="#39FFB6">$ ./boot --operator</text>
+    <!-- ═══ Z_ EMBLEM ═══ -->
+    <g transform="translate(152 196)">
+      <g class="orbit-r">
+        <circle r="102" stroke="#242B3A" stroke-width="1.5" stroke-dasharray="3 9"/>
+        <circle cx="102" cy="0" r="3.5" fill="#FF4D8D" filter="url(#glow)"/>
+      </g>
+      <g class="orbit">
+        <circle r="88" stroke="#39FFB6" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="26 18"/>
+        <circle cx="0" cy="-88" r="4" fill="#39FFB6" filter="url(#glow)"/>
+        <circle cx="0" cy="88" r="3" fill="#7C5CFC" filter="url(#glow)"/>
+      </g>
+      <g class="hexbreathe">
+        <path d="M37 -64 74 0 37 64 -37 64 -74 0 -37 -64Z" stroke="url(#hexg)" stroke-width="3" filter="url(#glow)"/>
+        <path d="M30 -52 60 0 30 52 -30 52 -60 0 -30 -52Z" stroke="#7C5CFC" stroke-opacity=".35" stroke-width="1.5"/>
+      </g>
+      <g filter="url(#glow)">
+        <text class="mono z-pink" y="24" text-anchor="middle" font-size="66" font-weight="700" fill="#FF4D8D">Z_</text>
+        <text class="mono z-cyan" y="24" text-anchor="middle" font-size="66" font-weight="700" fill="#39FFB6">Z_</text>
+        <text class="mono z-main" y="24" text-anchor="middle" font-size="66" font-weight="700" fill="#F4F7FB">Z_</text>
+      </g>
+      <path d="M-74 -78 -74 -64 M-74 -78 -60 -78 M74 -78 74 -64 M74 -78 60 -78 M-74 78 -74 64 M-74 78 -60 78 M74 78 74 64 M74 78 60 78" stroke="#39FFB6" stroke-width="2" stroke-opacity=".7"/>
+      <text y="128" text-anchor="middle" class="mono flick" font-size="11" fill="#667085" letter-spacing="3">OPERATOR // Z-CLASS</text>
+    </g>
+
+    <!-- identity -->
+    <text x="300" y="102" class="mono" font-size="13" fill="#39FFB6">$ whoami --verbose</text>
 
     <g filter="url(#glow)">
-      <text class="mono g-pink" x="55" y="172" font-size="54" font-weight="700" fill="#FF4D8D">zyaoii_</text>
-      <text class="mono g-cyan" x="55" y="172" font-size="54" font-weight="700" fill="#39FFB6">zyaoii_</text>
-      <text class="mono g-main" x="55" y="172" font-size="54" font-weight="700" fill="#F4F7FB">zyaoii_</text>
+      <text class="mono g-pink" x="300" y="174" font-size="58" font-weight="700" fill="#FF4D8D">zyaoii_</text>
+      <text class="mono g-cyan" x="300" y="174" font-size="58" font-weight="700" fill="#39FFB6">zyaoii_</text>
+      <text class="mono g-main" x="300" y="174" font-size="58" font-weight="700" fill="#F4F7FB">zyaoii_</text>
     </g>
-    <rect class="blink" x="292" y="130" width="6" height="46" fill="#39FFB6"/>
+    <rect class="blink" x="556" y="130" width="6" height="48" fill="#39FFB6"/>
 
-    <text x="58" y="208" class="mono" font-size="17" fill="#AAB4C3">AI ENGINEERING</text>
-    <text x="220" y="208" class="mono" font-size="17" fill="#667085">×</text>
-    <text x="244" y="208" class="mono" font-size="17" fill="#FF4D8D">GAME QUALITY ASSURANCE</text>
+    <text x="303" y="210" class="mono" font-size="17" fill="#AAB4C3">AI ENGINEERING</text>
+    <text x="465" y="210" class="mono" font-size="17" fill="#667085">×</text>
+    <text x="489" y="210" class="mono" font-size="17" fill="#FF4D8D">GAME QUALITY ASSURANCE</text>
 
-    <text x="58" y="252" class="mono fade1" font-size="13" fill="#C8D1E0">OBSERVE</text>
-    <path class="flow" d="M128 247H177" stroke="#39FFB6" stroke-width="2"/>
-    <text x="190" y="252" class="mono fade2" font-size="13" fill="#C8D1E0">VERIFY</text>
-    <path class="flow" d="M248 247H297" stroke="#7C5CFC" stroke-width="2"/>
-    <text x="310" y="252" class="mono fade3" font-size="13" fill="#C8D1E0">IMPROVE</text>
+    <text x="303" y="254" class="mono fade1" font-size="13" fill="#C8D1E0">OBSERVE</text>
+    <path class="flow" d="M373 249H422" stroke="#39FFB6" stroke-width="2"/>
+    <text x="435" y="254" class="mono fade2" font-size="13" fill="#C8D1E0">VERIFY</text>
+    <path class="flow" d="M493 249H542" stroke="#7C5CFC" stroke-width="2"/>
+    <text x="555" y="254" class="mono fade3" font-size="13" fill="#C8D1E0">IMPROVE</text>
 
-    <text x="55" y="292" class="mono" font-size="12" fill="#667085">> risk.scan(build)      <tspan fill="#39FFB6">... OK</tspan></text>
-    <text x="55" y="312" class="mono" font-size="12" fill="#667085">> agent.deploy(tests)   <tspan fill="#39FFB6">... OK</tspan></text>
+    <text x="300" y="292" class="mono" font-size="12" fill="#667085">> risk.scan(build)      <tspan fill="#39FFB6">... OK</tspan></text>
+    <text x="300" y="312" class="mono" font-size="12" fill="#667085">> agent.deploy(tests)   <tspan fill="#39FFB6">... OK</tspan></text>
 
-    <circle class="pulse" cx="62" cy="344" r="5" fill="#39FFB6"/>
-    <text x="78" y="350" class="cn" font-size="17" font-weight="600" fill="#39FFB6" filter="url(#glow)">路虽远，行则将至；事虽难，做则必成。</text>
+    <circle class="pulse" cx="307" cy="344" r="5" fill="#39FFB6"/>
+    <text x="323" y="350" class="cn" font-size="17" font-weight="600" fill="#39FFB6" filter="url(#glow)">路虽远，行则将至；事虽难，做则必成。</text>
 
     <!-- right: radar -->
-    <g transform="translate(795 205)">
-      <circle r="106" stroke="#242B3A" stroke-width="2"/>
-      <circle r="76" stroke="#7C5CFC" stroke-opacity=".45"/>
-      <circle r="46" stroke="#39FFB6" stroke-opacity=".5"/>
-      <path d="M-106 0H106M0 -106V106" stroke="#242B3A" stroke-dasharray="3 6"/>
-      <g stroke="#39FFB6" stroke-opacity=".5">
-        <path d="M0 -106V-99"/><path d="M53 -91.8 49.5 -85.7"/><path d="M91.8 -53 85.7 -49.5"/>
-        <path d="M106 0H99"/><path d="M91.8 53 85.7 49.5"/><path d="M53 91.8 49.5 85.7"/>
-        <path d="M0 106V99"/><path d="M-53 91.8 -49.5 85.7"/><path d="M-91.8 53 -85.7 49.5"/>
-        <path d="M-106 0H-99"/><path d="M-91.8 -53 -85.7 -49.5"/><path d="M-53 -91.8 -49.5 -85.7"/>
-      </g>
+    <g transform="translate(838 205)">
+      <circle r="96" stroke="#242B3A" stroke-width="2"/>
+      <circle r="68" stroke="#7C5CFC" stroke-opacity=".45"/>
+      <circle r="40" stroke="#39FFB6" stroke-opacity=".5"/>
+      <path d="M-96 0H96M0 -96V96" stroke="#242B3A" stroke-dasharray="3 6"/>
       <g class="rotor">
-        <path d="M0 0 L104 0 A104 104 0 0 0 52 -90 Z" fill="url(#sweep)"/>
-        <path d="M0 0 L104 0" stroke="#39FFB6" stroke-width="2" filter="url(#glow)"/>
+        <path d="M0 0 L94 0 A94 94 0 0 0 47 -81 Z" fill="url(#sweep)"/>
+        <path d="M0 0 L94 0" stroke="#39FFB6" stroke-width="2" filter="url(#glow)"/>
       </g>
       <circle class="ping1" cx="46" cy="-30" r="7" fill="none" stroke="#FF4D8D" stroke-width="2"/>
       <circle cx="46" cy="-30" r="3.5" fill="#FF4D8D"/>
@@ -134,8 +167,8 @@
       <circle cx="-52" cy="24" r="3.5" fill="#F6C453"/>
       <circle class="ping3" cx="18" cy="58" r="7" fill="none" stroke="#7C5CFC" stroke-width="2"/>
       <circle cx="18" cy="58" r="3.5" fill="#7C5CFC"/>
-      <circle class="pulse" r="9" fill="#39FFB6" opacity=".85" filter="url(#glow)"/>
-      <text y="132" text-anchor="middle" class="mono flick" font-size="11" fill="#667085">RISK RADAR // SCANNING</text>
+      <circle class="pulse" r="8" fill="#39FFB6" opacity=".85" filter="url(#glow)"/>
+      <text y="122" text-anchor="middle" class="mono flick" font-size="11" fill="#667085">RISK RADAR // SCANNING</text>
     </g>
   </g>
 

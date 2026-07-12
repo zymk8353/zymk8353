@@ -1,6 +1,6 @@
-<svg width="1000" height="140" viewBox="0 0 1000 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="170" viewBox="0 0 1000 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <clipPath id="fcard"><rect width="1000" height="140" rx="14"/></clipPath>
+    <clipPath id="fcard"><rect width="1000" height="170" rx="14"/></clipPath>
     <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#39FFB6" stop-opacity=".28"/>
       <stop offset=".5" stop-color="#7C5CFC" stop-opacity=".3"/>
@@ -9,6 +9,10 @@
     <linearGradient id="w2" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#7C5CFC" stop-opacity=".22"/>
       <stop offset="1" stop-color="#39FFB6" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="fhex" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39FFB6"/>
+      <stop offset="1" stop-color="#7C5CFC"/>
     </linearGradient>
     <filter id="fglow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="2.6" result="b"/>
@@ -20,19 +24,30 @@
     .wa { animation: drift 9s linear infinite; }
     .wb { animation: drift 13s linear infinite reverse; }
     .tw { animation: glowpulse 3.2s ease-in-out infinite; }
+    .spin { animation: spin 12s linear infinite; transform-origin: 0 0; }
     @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-500px); } }
     @keyframes glowpulse { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
+    @keyframes spin { to { transform: rotate(360deg); } }
   </style>
   <g clip-path="url(#fcard)">
-    <rect width="1000" height="140" fill="#05070D"/>
+    <rect width="1000" height="170" fill="#05070D"/>
     <g class="wa">
-      <path d="M0 92 Q62 62 125 92 T250 92 T375 92 T500 92 T625 92 T750 92 T875 92 T1000 92 T1125 92 T1250 92 T1375 92 T1500 92 V140 H0 Z" fill="url(#w1)"/>
+      <path d="M0 122 Q62 92 125 122 T250 122 T375 122 T500 122 T625 122 T750 122 T875 122 T1000 122 T1125 122 T1250 122 T1375 122 T1500 122 V170 H0 Z" fill="url(#w1)"/>
     </g>
     <g class="wb">
-      <path d="M-500 104 Q-437 82 -375 104 T-250 104 T-125 104 T0 104 T125 104 T250 104 T375 104 T500 104 T625 104 T750 104 T875 104 T1000 104 V140 H-500 Z" fill="url(#w2)"/>
+      <path d="M-500 134 Q-437 112 -375 134 T-250 134 T-125 134 T0 134 T125 134 T250 134 T375 134 T500 134 T625 134 T750 134 T875 134 T1000 134 V170 H-500 Z" fill="url(#w2)"/>
     </g>
-    <text x="500" y="52" text-anchor="middle" class="mono tw" font-size="16" font-weight="700" fill="#39FFB6" filter="url(#fglow)" letter-spacing="6">SIGNAL OVER NOISE</text>
-    <text x="500" y="76" text-anchor="middle" class="mono" font-size="11" fill="#667085">// end of transmission — thanks for scrolling</text>
+
+    <g transform="translate(500 46)">
+      <g class="spin">
+        <circle r="34" stroke="#39FFB6" stroke-opacity=".4" stroke-width="1.2" stroke-dasharray="14 10"/>
+      </g>
+      <path d="M13 -22.5 26 0 13 22.5 -13 22.5 -26 0 -13 -22.5Z" stroke="url(#fhex)" stroke-width="2" filter="url(#fglow)"/>
+      <text y="8" text-anchor="middle" class="mono" font-size="22" font-weight="700" fill="#F4F7FB" filter="url(#fglow)">Z_</text>
+    </g>
+
+    <text x="500" y="112" text-anchor="middle" class="mono tw" font-size="16" font-weight="700" fill="#39FFB6" filter="url(#fglow)" letter-spacing="6">SIGNAL OVER NOISE</text>
+    <text x="500" y="136" text-anchor="middle" class="mono" font-size="11" fill="#667085">// zyaoii_ — end of transmission, thanks for scrolling</text>
   </g>
-  <rect x="1" y="1" width="998" height="138" rx="13" stroke="#242B3A" stroke-width="2"/>
+  <rect x="1" y="1" width="998" height="168" rx="13" stroke="#242B3A" stroke-width="2"/>
 </svg>

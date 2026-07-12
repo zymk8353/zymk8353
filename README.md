@@ -2,7 +2,7 @@
 
 <img width="100%" src="./assets/hero.svg" alt="zyaoii_ — AI x Game Quality Assurance" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2600&pause=900&color=39FFB6&center=true&vCenter=true&width=760&lines=AI+finds+the+pattern.+QA+finds+the+risk.;Automate+the+repeatable.+Investigate+the+unexpected.;Great+quality+feels+like+nothing+went+wrong.;while+(curious)+%7B+learn();+build();+break();+fix();+%7D" alt="Animated manifesto" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2600&pause=900&color=39FFB6&center=true&vCenter=true&width=760&lines=%3E+whoami%3A+zyaoii_+//+operator+Z-class;AI+finds+the+pattern.+QA+finds+the+risk.;Automate+the+repeatable.+Investigate+the+unexpected.;Great+quality+feels+like+nothing+went+wrong.;while+(curious)+%7B+learn();+build();+break();+fix();+%7D" alt="Animated manifesto" />
 
 <p>
   <img src="https://img.shields.io/badge/AI_ENGINEERING-080B12?style=for-the-badge&logo=openai&logoColor=39FFB6" />
